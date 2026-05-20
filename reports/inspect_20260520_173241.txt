@@ -1,0 +1,102 @@
+BMC AutoInsight 巡检报告（文本）
+时间: 2026-05-20T17:31:36.267074
+目标: https://192.168.16.111
+
+【提示与跳过说明】
+ - 存储: 【存储模块权限受限，厂商未开放，已跳过检测】当前账号或固件策略禁止访问 `/redfish/v1/Systems/1/Storage`。磁盘/RAID 健康请在厂商 Web 或开放 Redfish 权限后重试。
+ - 主机 PowerState=On，None 传感器已标记为「【该传感器未上报数据】」
+存储: 【存储模块权限受限，厂商未开放，已跳过检测】当前账号或固件策略禁止访问 `/redfish/v1/Systems/1/Storage`。磁盘/RAID 健康请在厂商 Web 或开放 Redfish 权限后重试。
+事件: 枚举 LogServices 成员: /redfish/v1/Systems/1/LogServices/Log1
+
+【传感器】
+  温度 CPU Temp: 51
+  温度 PCH Temp: 44
+  温度 System Temp: 40
+  温度 Peripheral Temp: 43
+  温度 CPU_VRMIN Temp: 57
+  温度 CPU_VRMIO Temp: 47
+  温度 VRMABCD Temp: 59
+  温度 VRMEFGH Temp: 52
+  温度 M2_SSD1 Temp: 【该传感器未上报数据】
+  温度 M2_SSD2 Temp: 【该传感器未上报数据】
+  温度 M2_SSD3 Temp: 【该传感器未上报数据】
+  温度 M2_SSD4 Temp: 【该传感器未上报数据】
+  温度 DIMMA~D Temp: 48
+  温度 DIMME~H Temp: 47
+  温度 PMEMA~D Temp: 【该传感器未上报数据】
+  温度 PMEME~H Temp: 【该传感器未上报数据】
+  温度 GPU1 Temp: 48
+  温度 GPU5 Temp: 40
+  风扇 FAN1: 280
+  风扇 FAN2: 3500
+  风扇 FAN3: 【该传感器未上报数据】
+  风扇 FAN4: 【该传感器未上报数据】
+  风扇 FAN5: 【该传感器未上报数据】
+  风扇 FAN6: 【该传感器未上报数据】
+  风扇 FANA: 1400
+  风扇 FANB: 280
+  风扇 FANC: 【该传感器未上报数据】
+  风扇 FAND: 【该传感器未上报数据】
+  功耗 System Power Control: 172
+
+【API 冒烟】
+  service_root: /redfish/v1/ HTTP=200 PASS
+  system: /redfish/v1/Systems/1 HTTP=200 PASS
+  accountservice: /redfish/v1/AccountService HTTP=200 PASS
+  registries: /redfish/v1/Registries HTTP=200 PASS
+  jsonschemas: /redfish/v1/JsonSchemas HTTP=200 PASS
+  telemetryservice: /redfish/v1/TelemetryService HTTP=200 PASS
+  chassis: /redfish/v1/Chassis HTTP=200 PASS
+  sessionservice: /redfish/v1/SessionService HTTP=200 PASS
+  redfish_v1: /redfish/v1 HTTP=200 PASS
+  eventservice: /redfish/v1/EventService HTTP=200 PASS
+  updateservice: /redfish/v1/UpdateService HTTP=200 PASS
+  systems: /redfish/v1/Systems HTTP=200 PASS
+  oem_supermicro_dumpservice: /redfish/v1/Oem/Supermicro/DumpService HTTP=200 PASS
+  managers: /redfish/v1/Managers HTTP=200 PASS
+  taskservice: /redfish/v1/TaskService HTTP=200 PASS
+  managers_1_privilegeregistry: /redfish/v1/Managers/1/PrivilegeRegistry HTTP=200 PASS
+  accountservice_roles: /redfish/v1/AccountService/Roles HTTP=200 PASS
+  accountservice_accounts: /redfish/v1/AccountService/Accounts HTTP=200 PASS
+  registries_base: /redfish/v1/Registries/Base HTTP=200 PASS
+  registries_event: /redfish/v1/Registries/Event HTTP=200 PASS
+  registries_smc: /redfish/v1/Registries/SMC HTTP=200 PASS
+  registries_taskevent: /redfish/v1/Registries/TaskEvent HTTP=200 PASS
+  registries_resourceevent: /redfish/v1/Registries/ResourceEvent HTTP=200 PASS
+  registries_biosattributeregistry: /redfish/v1/Registries/BiosAttributeRegistry HTTP=200 PASS
+  jsonschemas_mousemode_v1_0_0: /redfish/v1/JsonSchemas/MouseMode.v1_0_0 HTTP=200 PASS
+  jsonschemas_smcethernetinterfaceextensions: /redfish/v1/JsonSchemas/SmcEthernetInterfaceExtensions HTTP=200 PASS
+  jsonschemas_smcdriveextensions_v1_0_0: /redfish/v1/JsonSchemas/SmcDriveExtensions.v1_0_0 HTTP=200 PASS
+  jsonschemas_ntp_v1_0_1: /redfish/v1/JsonSchemas/NTP.v1_0_1 HTTP=200 PASS
+  jsonschemas_activatelicense_v1_0_0: /redfish/v1/JsonSchemas/ActivateLicense.v1_0_0 HTTP=200 PASS
+  jsonschemas_dumpservice_v1_0_2: /redfish/v1/JsonSchemas/DumpService.v1_0_2 HTTP=200 PASS
+  jsonschemas_smcmemoryextensions: /redfish/v1/JsonSchemas/SmcMemoryExtensions HTTP=200 PASS
+  jsonschemas_dump_v1_0_0: /redfish/v1/JsonSchemas/Dump.v1_0_0 HTTP=200 PASS
+  jsonschemas_licensemanager: /redfish/v1/JsonSchemas/LicenseManager HTTP=200 PASS
+  jsonschemas_lldpservice_v1_0_0: /redfish/v1/JsonSchemas/LldpService.v1_0_0 HTTP=200 PASS
+  jsonschemas_sslcert_v1_0_0: /redfish/v1/JsonSchemas/SSLCert.v1_0_0 HTTP=200 PASS
+  jsonschemas_smctemperatureextensions: /redfish/v1/JsonSchemas/SmcTemperatureExtensions HTTP=200 PASS
+  jsonschemas_smcpowerextensions_v1_0_0: /redfish/v1/JsonSchemas/SmcPowerExtensions.v1_0_0 HTTP=200 PASS
+  jsonschemas_smcfanextensions_v1_5_0: /redfish/v1/JsonSchemas/SmcFanExtensions.v1_5_0 HTTP=200 PASS
+  jsonschemas_haraidcontroller_v1_0_0: /redfish/v1/JsonSchemas/HARAIDController.v1_0_0 HTTP=200 PASS
+  jsonschemas_smcupdateserviceextensions_v1_0_0: /redfish/v1/JsonSchemas/SmcUpdateServiceExtensions.v1_0_0 HTTP=200 PASS
+  jsonschemas_smcfirmwareinventory: /redfish/v1/JsonSchemas/SmcFirmwareInventory HTTP=200 PASS
+  jsonschemas_clearlicense: /redfish/v1/JsonSchemas/ClearLicense HTTP=200 PASS
+  jsonschemas_smcupdateserviceextensions: /redfish/v1/JsonSchemas/SmcUpdateServiceExtensions HTTP=200 PASS
+  jsonschemas_smclogserviceextensions: /redfish/v1/JsonSchemas/SmcLogServiceExtensions HTTP=200 PASS
+  jsonschemas_ntp_v1_0_0: /redfish/v1/JsonSchemas/NTP.v1_0_0 HTTP=200 PASS
+  jsonschemas_lldpservice: /redfish/v1/JsonSchemas/LldpService HTTP=200 PASS
+  jsonschemas_syslockdown: /redfish/v1/JsonSchemas/SysLockdown HTTP=200 PASS
+  jsonschemas_radius_v1_0_2: /redfish/v1/JsonSchemas/RADIUS.v1_0_2 HTTP=200 PASS
+  jsonschemas_managerconfig: /redfish/v1/JsonSchemas/ManagerConfig HTTP=200 PASS
+  jsonschemas_smcchassisextensions_v1_0_0: /redfish/v1/JsonSchemas/SmcChassisExtensions.v1_0_0 HTTP=200 PASS
+  jsonschemas_smcfirmwareinventory_v1_0_0: /redfish/v1/JsonSchemas/SmcFirmwareInventory.v1_0_0 HTTP=200 PASS
+
+【硬件信息】
+  型号: Super Server  SN: 
+  BIOS: 1.9  BMC: 01.05.06
+
+【告警项】
+ - [crit] fan: FAN1 转速低于严重下限(800.0 RPM): 280 RPM
+ - [warn] fan: FANA 转速偏低(<1500.0 RPM): 1400 RPM
+ - [crit] fan: FANB 转速低于严重下限(800.0 RPM): 280 RPM

@@ -1,0 +1,305 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><title>BMC AutoInsight 巡检报告</title>
+<style>
+body{font-family:Segoe UI,Microsoft YaHei,sans-serif;margin:24px;background:#fafafa;}
+h1{color:#0d47a1;} .meta{color:#555;} table{border-collapse:collapse;width:100%;margin:12px 0;}
+th,td{border:1px solid #ccc;padding:8px;text-align:left;font-size:13px;}
+th{background:#e3f2fd;} .err{background:#ffebee;color:#c62828;font-weight:bold;}
+.warn{background:#fff8e1;color:#ef6c00;} .ok{background:#e8f5e9;}
+pre{background:#fff;border:1px solid #ddd;padding:12px;overflow:auto;}
+</style>
+</head>
+<body>
+<h1>BMC AutoInsight 巡检报告</h1>
+<p class="meta">目标: https://192.168.16.111 | Mock: False | 时间: 2026-05-20T17:31:36.267074</p>
+<h2>异常与说明</h2>
+<table>
+<tr><th>类型</th><th>说明</th></tr>
+<tr class="warn"><td>提示</td><td>存储: 【存储模块权限受限，厂商未开放，已跳过检测】当前账号或固件策略禁止访问 `/redfish/v1/Systems/1/Storage`。磁盘/RAID 健康请在厂商 Web 或开放 Redfish 权限后重试。</td></tr><tr class="warn"><td>提示</td><td>主机 PowerState=On，None 传感器已标记为「【该传感器未上报数据】」</td></tr>
+<tr class="err"><td>crit</td><td>fan: FAN1 转速低于严重下限(800.0 RPM): 280 RPM</td></tr><tr class="err"><td>warn</td><td>fan: FANA 转速偏低(<1500.0 RPM): 1400 RPM</td></tr><tr class="err"><td>crit</td><td>fan: FANB 转速低于严重下限(800.0 RPM): 280 RPM</td></tr>
+</table>
+<h2>存储/事件日志状态</h2>
+<table>
+<tr><th>模块</th><th>状态说明</th></tr>
+<tr><td>Storage</td><td>【存储模块权限受限，厂商未开放，已跳过检测】当前账号或固件策略禁止访问 `/redfish/v1/Systems/1/Storage`。磁盘/RAID 健康请在厂商 Web 或开放 Redfish 权限后重试。</td></tr>
+<tr><td>EventLog</td><td>枚举 LogServices 成员: /redfish/v1/Systems/1/LogServices/Log1</td></tr>
+</table>
+<h2>温度 / 风扇 / 功耗</h2>
+<table><tr><th>类型</th><th>名称</th><th>读数</th></tr>
+<tr><td>温度</td><td>CPU Temp</td><td>51</td></tr><tr><td>温度</td><td>PCH Temp</td><td>44</td></tr><tr><td>温度</td><td>System Temp</td><td>40</td></tr><tr><td>温度</td><td>Peripheral Temp</td><td>43</td></tr><tr><td>温度</td><td>CPU_VRMIN Temp</td><td>57</td></tr><tr><td>温度</td><td>CPU_VRMIO Temp</td><td>47</td></tr><tr><td>温度</td><td>VRMABCD Temp</td><td>59</td></tr><tr><td>温度</td><td>VRMEFGH Temp</td><td>52</td></tr><tr><td>温度</td><td>M2_SSD1 Temp</td><td>【该传感器未上报数据】</td></tr><tr><td>温度</td><td>M2_SSD2 Temp</td><td>【该传感器未上报数据】</td></tr><tr><td>温度</td><td>M2_SSD3 Temp</td><td>【该传感器未上报数据】</td></tr><tr><td>温度</td><td>M2_SSD4 Temp</td><td>【该传感器未上报数据】</td></tr><tr><td>温度</td><td>DIMMA~D Temp</td><td>48</td></tr><tr><td>温度</td><td>DIMME~H Temp</td><td>47</td></tr><tr><td>温度</td><td>PMEMA~D Temp</td><td>【该传感器未上报数据】</td></tr><tr><td>温度</td><td>PMEME~H Temp</td><td>【该传感器未上报数据】</td></tr><tr><td>温度</td><td>GPU1 Temp</td><td>48</td></tr><tr><td>温度</td><td>GPU5 Temp</td><td>40</td></tr>
+<tr><td>风扇</td><td>FAN1</td><td>280</td></tr><tr><td>风扇</td><td>FAN2</td><td>3500</td></tr><tr><td>风扇</td><td>FAN3</td><td>【该传感器未上报数据】</td></tr><tr><td>风扇</td><td>FAN4</td><td>【该传感器未上报数据】</td></tr><tr><td>风扇</td><td>FAN5</td><td>【该传感器未上报数据】</td></tr><tr><td>风扇</td><td>FAN6</td><td>【该传感器未上报数据】</td></tr><tr><td>风扇</td><td>FANA</td><td>1400</td></tr><tr><td>风扇</td><td>FANB</td><td>280</td></tr><tr><td>风扇</td><td>FANC</td><td>【该传感器未上报数据】</td></tr><tr><td>风扇</td><td>FAND</td><td>【该传感器未上报数据】</td></tr>
+<tr><td>功耗</td><td>System Power Control</td><td>172</td></tr>
+</table>
+<h2>硬件信息</h2>
+<table><tr><th>项</th><th>值</th></tr>
+<tr><td>制造商</td><td>Supermicro</td></tr><tr><td>型号</td><td>Super Server</td></tr><tr><td>序列号</td><td>-</td></tr><tr><td>主机名</td><td>-</td></tr><tr><td>PowerState</td><td>On</td></tr><tr><td>BIOS 版本</td><td>1.9</td></tr><tr><td>BMC 固件</td><td>01.05.06</td></tr>
+</table>
+<h3>主板</h3>
+<table><tr><th>项</th><th>值</th></tr>
+<tr><td>制造商</td><td>Supermicro</td></tr><tr><td>型号</td><td>Super Server</td></tr><tr><td>部件号</td><td>-</td></tr><tr><td>序列号</td><td>-</td></tr><tr><td>SKU</td><td>To be filled by O.E.M.</td></tr>
+</table>
+<h3>CPU</h3>
+<table><tr><th>ID</th><th>型号</th><th>核</th><th>线程</th><th>频率MHz</th><th>厂商</th></tr>
+<tr><td>1</td><td>Intel(R) Xeon(R) Silver 4314 CPU @ 2.40GHz</td><td>16</td><td>32</td><td>4500</td><td>Intel(R) Corporation</td></tr>
+</table>
+<h3>内存</h3>
+<p>总量: 128.0 GiB</p>
+<table><tr><th>ID</th><th>容量GiB</th><th>类型</th><th>频率MHz</th><th>厂商</th><th>序列号</th></tr>
+<tr><td>1</td><td>16.0</td><td>DDR4</td><td>2666</td><td>SK Hynix</td><td>80AD01215185E471C6</td></tr><tr><td>2</td><td>16.0</td><td>DDR4</td><td>2666</td><td>SK Hynix</td><td>80AD01215295BED8D0</td></tr><tr><td>3</td><td>16.0</td><td>DDR4</td><td>2666</td><td>SK Hynix</td><td>80AD01215185E4721C</td></tr><tr><td>4</td><td>16.0</td><td>DDR4</td><td>2666</td><td>SK Hynix</td><td>80AD01215295BED813</td></tr><tr><td>5</td><td>16.0</td><td>DDR4</td><td>2666</td><td>SK Hynix</td><td>80AD01215295BED8B6</td></tr><tr><td>6</td><td>16.0</td><td>DDR4</td><td>2666</td><td>SK Hynix</td><td>80AD01215185E47265</td></tr><tr><td>7</td><td>16.0</td><td>DDR4</td><td>2666</td><td>SK Hynix</td><td>80AD01215295BED852</td></tr><tr><td>8</td><td>16.0</td><td>DDR4</td><td>2666</td><td>SK Hynix</td><td>80AD01215185E4725D</td></tr>
+</table>
+<h3>硬盘</h3>
+<table><tr><th>ID</th><th>型号</th><th>容量GiB</th><th>协议</th><th>介质</th><th>健康</th></tr>
+<tr><td>-</td><td>存储模块权限受限，硬盘详情可能不完整</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+</table>
+<h2>系统摘要</h2>
+<pre>{
+  "@odata.type": "#ComputerSystem.v1_16_0.ComputerSystem",
+  "@odata.id": "/redfish/v1/Systems/1",
+  "Id": "1",
+  "Name": "System",
+  "Description": "Description of server",
+  "Status": {
+    "State": "Enabled",
+    "Health": "Critical"
+  },
+  "SerialNumber": null,
+  "PartNumber": null,
+  "AssetTag": null,
+  "IndicatorLED": "Off",
+  "LocationIndicatorActive": false,
+  "SystemType": "Physical",
+  "BiosVersion": "1.9",
+  "Manufacturer": "Supermicro",
+  "Model": "Super Server",
+  "SKU": "To be filled by O.E.M.",
+  "UUID": "9EA4C000-F83F-11EF-8000-7CC255C0583B",
+  "ProcessorSummary": {
+    "Count": 1,
+    "Model": "Intel(R) Xeon(R) processor",
+    "Status": {
+      "State": "Enabled",
+      "Health": "OK",
+      "HealthRollup": "OK"
+    },
+    "Metrics": {
+      "@odata.id": "/redfish/v1/Systems/1/ProcessorSummary/ProcessorMetrics"
+    }
+  },
+  "MemorySummary": {
+    "TotalSystemMemoryGiB": 128,
+    "MemoryMirroring": "System",
+    "Status": {
+      "State": "Enabled",
+      "Health": "OK",
+      "HealthRollup": "OK"
+    },
+    "Metrics": {
+      "@odata.id": "/redfish/v1/Systems/1/MemorySummary/MemoryMetrics"
+    }
+  },
+  "PowerState": "On",
+  "PowerOnDelaySeconds": 3,
+  "PowerOnDelaySeconds@Redfish.AllowableNumbers": [
+    "3:254:1"
+  ],
+  "PowerOffDelaySeconds": 3,
+  "PowerOffDelaySeconds@Redfish.AllowableNumbers": [
+    "3:254:1"
+  ],
+  "PowerCycleDelaySeconds": 5,
+  "PowerCycleDelaySeconds@Redfish.AllowableNumbers": [
+    "5:254:1"
+  ],
+  "Boot": {
+    "AutomaticRetryConfig": "Disabled",
+    "BootSourceOverrideEnabled": "Disabled",
+    "BootSourceOverrideMode": "Legacy",
+    "BootSourceOverrideTarget": "None",
+    "BootSourceOverrideTarget@Redfish.AllowableValues": [
+      "None",
+      "Pxe",
+      "Floppy",
+      "Cd",
+      "Usb",
+      "Hdd",
+      "BiosSetup",
+      "UsbCd",
+      "UefiBootNext"
+    ],
+    "BootOptions": {
+      "@odata.id": "/redfish/v1/Systems/1/BootOptions"
+    },
+    "BootNext": null,
+    "BootOrder": [
+      "Boot0000",
+      "Boot0008",
+      "Boot0002",
+      "Boot0003",
+      "Boot0004",
+      "Boot0005",
+      "Boot0001"
+    ]
+  },
+  "GraphicalConsole": {
+    "ServiceEnabled": true,
+    "Port": 5900,
+    "MaxConcurrentSessions": 4,
+    "ConnectTypesSupported": [
+      "KVMIP"
+    ]
+  },
+  "SerialConsole": {
+    "MaxConcurrentSessions": 1,
+    "SSH": {
+      "ServiceEnabled": true,
+      "Port": 22,
+      "SharedWithManagerCLI": true,
+      "ConsoleEntryCommand": "cd system1/sol1; start",
+      "HotKeySequenceDisplay": "press <Enter>, <Esc>, and then <T> to terminate session"
+    },
+    "IPMI": {
+      "HotKeySequenceDisplay": "Press ~.  - terminate connection",
+      "ServiceEnabled": true,
+      "Port": 623
+    }
+  },
+  "VirtualMediaConfig": {
+    "ServiceEnabled": true,
+    "Port": 623
+  },
+  "BootProgress": {
+    "OemLastState": null,
+    "LastState": "SystemHardwareInitializationComplete"
+  },
+  "Processors": {
+    "@odata.id": "/redfish/v1/Systems/1/Processors"
+  },
+  "Memory": {
+    "@odata.id": "/redfish/v1/Systems/1/Memory"
+  },
+  "EthernetInterfaces": {
+    "@odata.id": "/redfish/v1/Systems/1/EthernetInterfaces"
+  },
+  "NetworkInterfaces": {
+    "@odata.id": "/redfish/v1/Systems/1/NetworkInterfaces"
+  },
+  "Storage": {
+    "@odata.id": "/redfish/v1/Systems/1/Storage"
+  },
+  "LogServices": {
+    "@odata.id": "/redfish/v1/Systems/1/LogServices"
+  },
+  "SecureBoot": {
+    "@odata.id": "/redfish/v1/Systems/1/SecureBoot"
+  },
+  "Bios": {
+    "@odata.id": "/redfish/v1/Systems/1/Bios"
+  },
+  "VirtualMedia": {
+    "@odata.id": "/redfish/v1/Managers/1/VirtualMedia"
+  },
+  "Links": {
+    "Chassis": [
+      {
+        "@odata.id": "/redfish/v1/Chassis/1"
+      }
+    ],
+    "ManagedBy": [
+      {
+        "@odata.id": "/redfish/v1/Managers/1"
+      }
+    ],
+    "PoweredBy": [
+      {
+        "@odata.id": "/redfish/v1/Chassis/1/PowerSubsystem/PowerSupplies/1"
+      },
+      {
+        "@odata.id": "/redfish/v1/Chassis/1/PowerSubsystem/PowerSupplies/2"
+      }
+    ]
+  },
+  "Actions": {
+    "Oem": {},
+    "#ComputerSystem.Reset": {
+      "target": "/redfish/v1/Systems/1/Actions/ComputerSystem.Reset",
+      "@Redfish.ActionInfo": "/redfish/v1/Systems/1/ResetActionInfo",
+      "ResetType@Redfish.AllowableValues": [
+        "On",
+        "ForceOff",
+        "GracefulShutdownGracefulRestart",
+        "ForceRestart",
+        "Nmi",
+        "ForceOn"
+      ]
+    }
+  },
+  "Oem": {
+    "Supermicro": {
+      "@odata.type": "#SmcSystemExtensions.v1_0_0.System",
+      "NodeManager": {
+        "@odata.id": "/redfish/v1/Systems/1/Oem/Supermicro/NodeManager"
+      }
+    }
+  },
+  "@odata.etag": "\"9490c1d86d94a71b2eaad9754549674f\""
+}</pre>
+<h2>API 冒烟</h2>
+<p>总计 51 | 通过 51 | 失败 0</p>
+<table><tr><th>用例</th><th>路径</th><th>HTTP</th><th>耗时ms</th><th>结果</th></tr>
+<tr class="ok">
+<td>service_root</td><td>/redfish/v1/</td><td>200</td><td>315.6</td><td>PASS</td></tr><tr class="ok">
+<td>system</td><td>/redfish/v1/Systems/1</td><td>200</td><td>559.9</td><td>PASS</td></tr><tr class="ok">
+<td>accountservice</td><td>/redfish/v1/AccountService</td><td>200</td><td>250.9</td><td>PASS</td></tr><tr class="ok">
+<td>registries</td><td>/redfish/v1/Registries</td><td>200</td><td>428.3</td><td>PASS</td></tr><tr class="ok">
+<td>jsonschemas</td><td>/redfish/v1/JsonSchemas</td><td>200</td><td>432.6</td><td>PASS</td></tr><tr class="ok">
+<td>telemetryservice</td><td>/redfish/v1/TelemetryService</td><td>200</td><td>447.0</td><td>PASS</td></tr><tr class="ok">
+<td>chassis</td><td>/redfish/v1/Chassis</td><td>200</td><td>238.2</td><td>PASS</td></tr><tr class="ok">
+<td>sessionservice</td><td>/redfish/v1/SessionService</td><td>200</td><td>270.7</td><td>PASS</td></tr><tr class="ok">
+<td>redfish_v1</td><td>/redfish/v1</td><td>200</td><td>517.5</td><td>PASS</td></tr><tr class="ok">
+<td>eventservice</td><td>/redfish/v1/EventService</td><td>200</td><td>577.0</td><td>PASS</td></tr><tr class="ok">
+<td>updateservice</td><td>/redfish/v1/UpdateService</td><td>200</td><td>469.1</td><td>PASS</td></tr><tr class="ok">
+<td>systems</td><td>/redfish/v1/Systems</td><td>200</td><td>496.9</td><td>PASS</td></tr><tr class="ok">
+<td>oem_supermicro_dumpservice</td><td>/redfish/v1/Oem/Supermicro/DumpService</td><td>200</td><td>276.2</td><td>PASS</td></tr><tr class="ok">
+<td>managers</td><td>/redfish/v1/Managers</td><td>200</td><td>358.4</td><td>PASS</td></tr><tr class="ok">
+<td>taskservice</td><td>/redfish/v1/TaskService</td><td>200</td><td>244.8</td><td>PASS</td></tr><tr class="ok">
+<td>managers_1_privilegeregistry</td><td>/redfish/v1/Managers/1/PrivilegeRegistry</td><td>200</td><td>244.6</td><td>PASS</td></tr><tr class="ok">
+<td>accountservice_roles</td><td>/redfish/v1/AccountService/Roles</td><td>200</td><td>396.9</td><td>PASS</td></tr><tr class="ok">
+<td>accountservice_accounts</td><td>/redfish/v1/AccountService/Accounts</td><td>200</td><td>217.7</td><td>PASS</td></tr><tr class="ok">
+<td>registries_base</td><td>/redfish/v1/Registries/Base</td><td>200</td><td>292.4</td><td>PASS</td></tr><tr class="ok">
+<td>registries_event</td><td>/redfish/v1/Registries/Event</td><td>200</td><td>391.1</td><td>PASS</td></tr><tr class="ok">
+<td>registries_smc</td><td>/redfish/v1/Registries/SMC</td><td>200</td><td>259.6</td><td>PASS</td></tr><tr class="ok">
+<td>registries_taskevent</td><td>/redfish/v1/Registries/TaskEvent</td><td>200</td><td>443.2</td><td>PASS</td></tr><tr class="ok">
+<td>registries_resourceevent</td><td>/redfish/v1/Registries/ResourceEvent</td><td>200</td><td>507.3</td><td>PASS</td></tr><tr class="ok">
+<td>registries_biosattributeregistry</td><td>/redfish/v1/Registries/BiosAttributeRegistry</td><td>200</td><td>594.1</td><td>PASS</td></tr><tr class="ok">
+<td>jsonschemas_mousemode_v1_0_0</td><td>/redfish/v1/JsonSchemas/MouseMode.v1_0_0</td><td>200</td><td>437.2</td><td>PASS</td></tr><tr class="ok">
+<td>jsonschemas_smcethernetinterfaceextensions</td><td>/redfish/v1/JsonSchemas/SmcEthernetInterfaceExtensions</td><td>200</td><td>280.5</td><td>PASS</td></tr><tr class="ok">
+<td>jsonschemas_smcdriveextensions_v1_0_0</td><td>/redfish/v1/JsonSchemas/SmcDriveExtensions.v1_0_0</td><td>200</td><td>246.8</td><td>PASS</td></tr><tr class="ok">
+<td>jsonschemas_ntp_v1_0_1</td><td>/redfish/v1/JsonSchemas/NTP.v1_0_1</td><td>200</td><td>395.7</td><td>PASS</td></tr><tr class="ok">
+<td>jsonschemas_activatelicense_v1_0_0</td><td>/redfish/v1/JsonSchemas/ActivateLicense.v1_0_0</td><td>200</td><td>287.9</td><td>PASS</td></tr><tr class="ok">
+<td>jsonschemas_dumpservice_v1_0_2</td><td>/redfish/v1/JsonSchemas/DumpService.v1_0_2</td><td>200</td><td>261.7</td><td>PASS</td></tr><tr class="ok">
+<td>jsonschemas_smcmemoryextensions</td><td>/redfish/v1/JsonSchemas/SmcMemoryExtensions</td><td>200</td><td>374.1</td><td>PASS</td></tr><tr class="ok">
+<td>jsonschemas_dump_v1_0_0</td><td>/redfish/v1/JsonSchemas/Dump.v1_0_0</td><td>200</td><td>241.0</td><td>PASS</td></tr><tr class="ok">
+<td>jsonschemas_licensemanager</td><td>/redfish/v1/JsonSchemas/LicenseManager</td><td>200</td><td>422.5</td><td>PASS</td></tr><tr class="ok">
+<td>jsonschemas_lldpservice_v1_0_0</td><td>/redfish/v1/JsonSchemas/LldpService.v1_0_0</td><td>200</td><td>261.6</td><td>PASS</td></tr><tr class="ok">
+<td>jsonschemas_sslcert_v1_0_0</td><td>/redfish/v1/JsonSchemas/SSLCert.v1_0_0</td><td>200</td><td>436.9</td><td>PASS</td></tr><tr class="ok">
+<td>jsonschemas_smctemperatureextensions</td><td>/redfish/v1/JsonSchemas/SmcTemperatureExtensions</td><td>200</td><td>508.4</td><td>PASS</td></tr><tr class="ok">
+<td>jsonschemas_smcpowerextensions_v1_0_0</td><td>/redfish/v1/JsonSchemas/SmcPowerExtensions.v1_0_0</td><td>200</td><td>623.6</td><td>PASS</td></tr><tr class="ok">
+<td>jsonschemas_smcfanextensions_v1_5_0</td><td>/redfish/v1/JsonSchemas/SmcFanExtensions.v1_5_0</td><td>200</td><td>304.8</td><td>PASS</td></tr><tr class="ok">
+<td>jsonschemas_haraidcontroller_v1_0_0</td><td>/redfish/v1/JsonSchemas/HARAIDController.v1_0_0</td><td>200</td><td>272.5</td><td>PASS</td></tr><tr class="ok">
+<td>jsonschemas_smcupdateserviceextensions_v1_0_0</td><td>/redfish/v1/JsonSchemas/SmcUpdateServiceExtensions.v1_0_0</td><td>200</td><td>327.5</td><td>PASS</td></tr><tr class="ok">
+<td>jsonschemas_smcfirmwareinventory</td><td>/redfish/v1/JsonSchemas/SmcFirmwareInventory</td><td>200</td><td>489.4</td><td>PASS</td></tr><tr class="ok">
+<td>jsonschemas_clearlicense</td><td>/redfish/v1/JsonSchemas/ClearLicense</td><td>200</td><td>305.5</td><td>PASS</td></tr><tr class="ok">
+<td>jsonschemas_smcupdateserviceextensions</td><td>/redfish/v1/JsonSchemas/SmcUpdateServiceExtensions</td><td>200</td><td>225.8</td><td>PASS</td></tr><tr class="ok">
+<td>jsonschemas_smclogserviceextensions</td><td>/redfish/v1/JsonSchemas/SmcLogServiceExtensions</td><td>200</td><td>453.3</td><td>PASS</td></tr><tr class="ok">
+<td>jsonschemas_ntp_v1_0_0</td><td>/redfish/v1/JsonSchemas/NTP.v1_0_0</td><td>200</td><td>252.8</td><td>PASS</td></tr><tr class="ok">
+<td>jsonschemas_lldpservice</td><td>/redfish/v1/JsonSchemas/LldpService</td><td>200</td><td>282.4</td><td>PASS</td></tr><tr class="ok">
+<td>jsonschemas_syslockdown</td><td>/redfish/v1/JsonSchemas/SysLockdown</td><td>200</td><td>450.6</td><td>PASS</td></tr><tr class="ok">
+<td>jsonschemas_radius_v1_0_2</td><td>/redfish/v1/JsonSchemas/RADIUS.v1_0_2</td><td>200</td><td>526.6</td><td>PASS</td></tr><tr class="ok">
+<td>jsonschemas_managerconfig</td><td>/redfish/v1/JsonSchemas/ManagerConfig</td><td>200</td><td>470.8</td><td>PASS</td></tr><tr class="ok">
+<td>jsonschemas_smcchassisextensions_v1_0_0</td><td>/redfish/v1/JsonSchemas/SmcChassisExtensions.v1_0_0</td><td>200</td><td>554.5</td><td>PASS</td></tr><tr class="ok">
+<td>jsonschemas_smcfirmwareinventory_v1_0_0</td><td>/redfish/v1/JsonSchemas/SmcFirmwareInventory.v1_0_0</td><td>200</td><td>256.8</td><td>PASS</td></tr>
+</table>
+</body></html>
