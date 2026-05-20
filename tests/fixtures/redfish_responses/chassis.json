@@ -1,0 +1,11 @@
+{
+  "@odata.id": "/redfish/v1/Chassis/1",
+  "Id": "1",
+  "Manufacturer": "DemoVendor",
+  "Model": "X12DPU-6",
+  "PartNumber": "MB-DEMO-01",
+  "SerialNumber": "CH-SN-001",
+  "SKU": "SKU-DEMO",
+  "Thermal": {"@odata.id": "/redfish/v1/Chassis/1/Thermal"},
+  "Power": {"@odata.id": "/redfish/v1/Chassis/1/Power"}
+}

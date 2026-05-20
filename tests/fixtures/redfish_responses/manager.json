@@ -1,0 +1,9 @@
+{
+  "@odata.id": "/redfish/v1/Managers/1",
+  "Id": "1",
+  "Name": "BMC",
+  "FirmwareVersion": "01.02.03",
+  "HostName": "demo-bmc",
+  "Manufacturer": "DemoVendor",
+  "Model": "X12 BMC"
+}

@@ -1,0 +1,11 @@
+name: smoke
+description: 基础 Redfish 冒烟用例
+cases:
+  - name: service_root
+    method: GET
+    path: /redfish/v1/
+    expect_status: 200
+  - name: system
+    method: GET
+    path: /redfish/v1/Systems/1
+    expect_status: 200

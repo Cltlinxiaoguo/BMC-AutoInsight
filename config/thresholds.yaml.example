@@ -1,0 +1,13 @@
+# 复制为 config/thresholds.yaml
+thermal:
+  cpu_temp_warn_c: 75
+  cpu_temp_crit_c: 85
+fan:
+  min_rpm_warn: 1500
+  min_rpm_crit: 1000
+psu:
+  min_input_voltage: 200
+disk:
+  min_free_percent: 10
+memory:
+  ecc_error_warn: 1

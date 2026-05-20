@@ -1,0 +1,10 @@
+{
+  "@odata.id": "/redfish/v1/Systems/1/Memory/1",
+  "Id": "1",
+  "CapacityMiB": 32768,
+  "MemoryDeviceType": "DDR4",
+  "OperatingSpeedMhz": 3200,
+  "Manufacturer": "Samsung",
+  "SerialNumber": "MEM-SN-001",
+  "PartNumber": "M393A4K40DB3-CWE"
+}

@@ -1,0 +1,9 @@
+{
+  "@odata.id": "/redfish/v1/Systems/1/Processors/1",
+  "Id": "1",
+  "Manufacturer": "Intel",
+  "Model": "Xeon Gold 6330",
+  "TotalCores": 28,
+  "TotalThreads": 56,
+  "MaxSpeedMHz": 2200
+}

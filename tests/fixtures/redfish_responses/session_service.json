@@ -1,0 +1,5 @@
+{
+  "@odata.id": "/redfish/v1/SessionService",
+  "ServiceEnabled": true,
+  "Sessions": {"@odata.id": "/redfish/v1/SessionService/Sessions"}
+}

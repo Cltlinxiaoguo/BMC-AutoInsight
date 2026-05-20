@@ -1,0 +1,5 @@
+{
+  "@odata.id": "/redfish/v1/SessionService/Sessions/abc123",
+  "Id": "abc123",
+  "UserName": "admin"
+}

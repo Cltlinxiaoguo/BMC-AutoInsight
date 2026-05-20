@@ -1,0 +1,7 @@
+{
+  "@odata.id": "/redfish/v1/Systems",
+  "Members": [
+    {"@odata.id": "/redfish/v1/Systems/1"}
+  ],
+  "Members@odata.count": 1
+}

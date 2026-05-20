@@ -1,0 +1,6 @@
+{
+  "@odata.id": "/redfish/v1/Systems/1/LogServices/EventLog/Entries",
+  "Members": [
+    {"Id": "1", "Severity": "Warning", "Message": "Fan speed low", "Created": "2026-05-20T10:00:00Z"}
+  ]
+}

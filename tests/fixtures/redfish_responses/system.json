@@ -1,0 +1,25 @@
+{
+  "@odata.id": "/redfish/v1/Systems/1",
+  "Id": "1",
+  "Manufacturer": "DemoVendor",
+  "Model": "DemoServer",
+  "SerialNumber": "SN-DEMO-001",
+  "PartNumber": "MB-DEMO-01",
+  "SKU": "SKU-DEMO",
+  "PowerState": "On",
+  "BiosVersion": "3.4a",
+  "HostName": "demo-host",
+  "ProcessorSummary": {
+    "Count": 2,
+    "Model": "Intel Xeon Gold 6330",
+    "CoreCount": 28,
+    "LogicalProcessorCount": 56,
+    "SpeedMHz": 2200
+  },
+  "MemorySummary": {
+    "TotalSystemMemoryGiB": 128
+  },
+  "Status": {"State": "Enabled", "Health": "OK"},
+  "Storage": {"@odata.id": "/redfish/v1/Systems/1/Storage"},
+  "LogServices": {"@odata.id": "/redfish/v1/Systems/1/LogServices/EventLog/Entries"}
+}

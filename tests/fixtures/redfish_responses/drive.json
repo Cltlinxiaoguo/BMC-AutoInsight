@@ -1,0 +1,11 @@
+{
+  "@odata.id": "/redfish/v1/Chassis/1/Drives/Disk1",
+  "Id": "Disk1",
+  "Name": "Disk1",
+  "Model": "Samsung SSD 980",
+  "CapacityBytes": 1073741824000,
+  "Protocol": "NVMe",
+  "MediaType": "SSD",
+  "SerialNumber": "DISK-SN-001",
+  "Status": {"Health": "OK"}
+}

@@ -1,0 +1,72 @@
+# =============================================================================
+# BMC-AutoInsight — GitHub 源码仓库忽略项
+# 注意：不向仓库提交 exe、密钥配置、巡检产物、日志等；仅保留源码与示例。
+# =============================================================================
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+*.so
+.Python
+venv/
+.venv/
+env/
+
+# --- 测试与覆盖率 ---
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+coverage.xml
+*.cover
+.hypothesis/
+
+# --- 打包产物（不上传 exe / 分发目录）---
+build/
+dist/
+*.spec
+*.exe
+*.app
+*.dll
+wheelhouse/
+
+# --- 运行时输出（巡检报告、冒烟报告；保留 reports/ 下 Python 模块）---
+reports/*.html
+reports/*.json
+reports/*.txt
+reports/*.xlsx
+reports/*.xls
+
+# --- 日志 ---
+logs/
+*.log
+
+# --- 配置文件中的敏感与环境（仅存示例入库）---
+config/config.ini
+config/config.yaml
+config/thresholds.yaml
+.env
+.env.*
+!.env.example
+
+# --- IDE / 编辑器 ---
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.project
+.settings/
+
+# --- 操作系统 ---
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# --- 其他 ---
+*.tmp
+*.bak
+*.orig

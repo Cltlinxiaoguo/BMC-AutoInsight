@@ -1,0 +1,8 @@
+{
+  "@odata.id": "/redfish/v1/Chassis/1/Power",
+  "PowerControl": [{"MemberId": "0", "PowerConsumedWatts": 210}],
+  "PowerSupplies": [
+    {"MemberId": "PSU1", "LineInputVoltage": 220, "PowerCapacityWatts": 800, "Status": {"Health": "OK"}},
+    {"MemberId": "PSU2", "LineInputVoltage": 220, "PowerCapacityWatts": 800, "Status": {"Health": "OK"}}
+  ]
+}

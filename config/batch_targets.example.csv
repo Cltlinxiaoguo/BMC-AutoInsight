@@ -1,0 +1,3 @@
+host,port,username,password,verify_ssl
+192.168.16.111,443,ADMIN,change_me,false
+# 192.168.16.112,443,ADMIN,change_me,false

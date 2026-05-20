@@ -1,0 +1,62 @@
+# =============================================================================
+# BMC AutoInsight 企业版主配置 (INI)
+# 使用说明：复制本文件为 config/config.ini，修改 host / username / password 即可。
+# 亦可设置环境变量：BMC_HOST、BMC_USER、BMC_PASS
+# =============================================================================
+
+[basic]
+# BMC 地址（可只填 IP，或完整 https://ip:port）
+host = 192.168.16.111
+port = 443
+username = ADMIN
+password = change_me
+# 是否校验 HTTPS 证书（自签名 BMC 建议 false）
+verify_ssl = false
+# TCP 连接超时（秒）
+connect_timeout = 15
+# 单次 HTTP 读超时（秒）
+read_timeout = 120
+# 整次巡检最长等待（秒），0 表示不限制整体超时（单请求仍受 read_timeout 限制）
+inspection_timeout = 600
+# 会话保活：每隔多少秒主动重新登录，避免长巡检中途 Token 失效（0=关闭）
+session_keepalive_sec = 300
+# 认证方式: auto | session | basic （超微推荐 auto）
+auth_mode = auto
+chassis_id =
+# 电源操作是否强制二次确认（与 [power] 中 require_double_confirm 二选一逻辑）
+power_require_double_confirm = true
+
+# ---------- 告警阈值（可随机房策略调整）----------
+[threshold]
+# CPU / 入口温度（°C）
+cpu_temp_warn_c = 75
+cpu_temp_crit_c = 85
+# 风扇转速下限（RPM）
+fan_rpm_warn_min = 1500
+fan_rpm_crit_min = 800
+# 电源输入电压过低告警下限（V）
+psu_input_volt_warn_min = 200
+# 整机功耗（W），来自 PowerControl.PowerConsumedWatts
+power_watts_warn = 800
+power_watts_crit = 1200
+
+[logging]
+# DEBUG / INFO / WARNING / ERROR
+level = INFO
+dir = logs
+
+[power]
+# dry_run=true 时绝不向 BMC 发送真实电源指令（交付安全默认）
+dry_run = true
+# 是否需要命令行 --confirm
+require_confirm = true
+# 是否必须二次确认（--yes-danger 或环境变量 BMC_POWER_CONFIRM=yes）
+require_double_confirm = true
+
+[retry]
+# 网络抖动 / 401 / 503 / 429 时的最大尝试次数
+max_attempts = 4
+# 登录专用重试次数（Session/Basic 均失败时）
+login_attempts = 3
+backoff_base_sec = 2
+retry_429 = true

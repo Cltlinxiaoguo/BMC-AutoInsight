@@ -1,0 +1,6 @@
+{
+  "@odata.id": "/redfish/v1/Systems/1/Memory",
+  "Members": [
+    {"@odata.id": "/redfish/v1/Systems/1/Memory/1"}
+  ]
+}

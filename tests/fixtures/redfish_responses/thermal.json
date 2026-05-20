@@ -1,0 +1,9 @@
+{
+  "@odata.id": "/redfish/v1/Chassis/1/Thermal",
+  "Temperatures": [
+    {"MemberId": "CPU1", "ReadingCelsius": 42.0, "UpperThresholdCritical": 90.0, "Status": {"Health": "OK"}}
+  ],
+  "Fans": [
+    {"MemberId": "Fan1", "Reading": 5200, "LowerThresholdCritical": 1000, "Status": {"Health": "OK"}}
+  ]
+}

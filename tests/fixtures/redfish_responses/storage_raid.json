@@ -1,0 +1,8 @@
+{
+  "@odata.id": "/redfish/v1/Systems/1/Storage/RAID1",
+  "Id": "RAID1",
+  "Name": "Virtual Disk",
+  "Drives": [
+    {"@odata.id": "/redfish/v1/Chassis/1/Drives/Disk1"}
+  ]
+}
